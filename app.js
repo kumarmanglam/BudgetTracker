@@ -17,6 +17,8 @@ function handleSubmit(event) {
       "desc":desc,
       "amount":amount
     }
+    document.getElementById("amount").value="";
+    document.getElementById("desc").value="";
     datas.push(data);
     displayRecordEl(data);
     updateStats();
