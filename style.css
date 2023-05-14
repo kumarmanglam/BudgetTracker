@@ -1,0 +1,140 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 50px;
+  gap:10px;
+  justify-items: center;
+  align-items: start;
+  color: #007FFF;
+}
+.main-container{
+  border: 2px solid #007FFF;
+  border-radius: 20px;
+  grid-area: 1 / 2 / 2 / 4;
+}
+.main-stat{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 10px;
+  text-align: center;
+  background-color: #E0FFFF;
+  border-radius: 20px 20px 0 0;
+}
+#balance-stat{
+  font-size: 35px;
+}
+.stat-bottom{
+  margin-top: 30px;
+  width: 100%;
+  padding-inline: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.stat-bottom>*{
+  border: 1px solid #007FFF;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+.stat{
+  font-size: 25px;
+  font-weight: 600;
+}
+.main-form{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* From */
+.main-form{
+  padding-inline: 20px;
+}
+.form>*{
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  color: #007FFF;
+  padding: 5px;
+  border: 1px solid #007FFF;
+}
+#type{
+  padding: 5px;
+}
+#desc{
+  width: 150px;
+  padding: 5px;
+}
+#amount{
+  width: 80px;
+  padding: 5px;
+}
+
+/*Containers*/
+#inc-container{
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 20px;
+}
+#exp-container{
+  grid-area: 2 / 3 / 3 / 4; 
+  padding: 20px;
+}
+.container{
+  width: 300px;
+  border-radius: 5px;
+}
+.cont-header{
+  text-align: center;
+}
+.cont-header h2{
+  text-transform: uppercase;
+}
+.tile{
+  padding: 5px;
+}
+.record{
+  border: 1px solid #007FFF;
+  min-width: 300px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+}
+.record-desc{
+  flex-grow: 1;
+  overflow: hidden;
+}
+.record-data{
+  font-weight: 600;
+  padding: 0 10px;
+}
+.record-edit, .record-delete{
+  border: 0.5px solid #007FFF;
+  padding-inline: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #007FFF;
+  font-size: 10px;
+}
+#inc-record-data-amount,
+#income-stat
+{
+  color: green;
+}
+#exp-record-data-amount,
+#expense-stat
+{
+  color: red;
+}

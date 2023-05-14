@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap">
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="main-stat">
+      <div>
+        <p>Available Balance</p>
+        <p class="stat" id="balance-stat">0</p>
+      </div>
+      <div class="stat-bottom">
+        <div>
+          <p>Income</p>
+          <p class="stat" id="income-stat">0</p>
+        </div>
+        <div>
+          <p>Expense</p>
+          <p class="stat" id="expense-stat">0</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-form">
+      <form class="form" autocomplete="off" onsubmit="handleSubmit(event)">
+        <select name="type" id="type" onchange="togglePlaceholder()">
+          <option value="income" value="income">+</option>
+          <option value="expense" value="expense">-</option>
+        </select>
+        <input type="text" name="desc" placeholder="Description" id="desc" >
+        <input type="number" name="amount" placeholder="Amount" id="amount">
+        <input type="submit" value="submit"  id="submit">
+      </form>
+    </div>
+  </main>
+  <section class="container" id="inc-container">
+    <div class="cont-header" id="inc-cont-header">
+      <h2>income</h2>
+    </div>
+    <div class="tile" id="inc-tile">
+
+
+    </div>
+  </section>
+  <section class="container" id="exp-container">
+    <div class="cont-header" id="exp-cont-header">
+      <h2>expense</h2>
+    </div>
+    <div class="tile" id="exp-tile">
+
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
