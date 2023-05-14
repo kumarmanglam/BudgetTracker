@@ -115,6 +115,7 @@ function init(){
   datas.forEach(data => {
     displayRecordEl(data);
   })
+  updateStats();
 }
 
 function togglePlaceholder() {
